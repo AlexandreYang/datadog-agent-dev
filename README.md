@@ -1,5 +1,8 @@
 # datadog-agent-dev
 
+[![Build Status](https://travis-ci.org/AlexandreYang/datadog-agent-dev.svg?branch=master)](https://travis-ci.org/AlexandreYang/datadog-agent-dev)
+
+
 ## Setup
 
 ```
