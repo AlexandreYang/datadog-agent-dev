@@ -19,5 +19,6 @@ It's mapped to `/home/vagrant/work/src/github.com/DataDog/datadog-agent`.
 ```
 vagrant ssh
 
-invoke agent.build --build-exclude=systemd
+inv agent.build --build-exclude=systemd
+inv test --targets=./pkg/collector/check
 ```

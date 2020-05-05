@@ -63,7 +63,7 @@ source $HOME/.profile
 # ==========================================
 # PERMISSIONS
 # ==========================================
-sudo chown vagrant -R /home/vagrant/work
+sudo chown vagrant -R /home/vagrant
 
 # ==========================================
 # AGENT
@@ -71,6 +71,9 @@ sudo chown vagrant -R /home/vagrant/work
 
 cd $AGENT_REPO
 pip3 install -r requirements.txt
+
+python3 -m invoke rtloader.make
+python3 -m invoke rtloader.install
 python3 -m invoke deps
 
 # ==========================================
