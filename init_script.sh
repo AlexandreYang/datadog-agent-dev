@@ -20,7 +20,7 @@ apt-get install -y libsystemd-dev  # for Agent systemd
 # Install GO
 # ==========================================
 curl -O https://dl.google.com/go/go1.13.10.linux-amd64.tar.gz
-tar xvf go1.13.10.linux-amd64.tar.gz
+tar xf go1.13.10.linux-amd64.tar.gz
 sudo chown -R root:root ./go
 sudo mv go /usr/local
 
