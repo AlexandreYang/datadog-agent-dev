@@ -1,1 +1,3 @@
 /data/datadog-agent
+.vagrant
+*.log

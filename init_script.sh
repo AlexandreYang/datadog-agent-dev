@@ -37,16 +37,9 @@ sudo update-alternatives --install /usr/bin/pip pip /usr/bin/pip3 1
 # Install CMAKE >= 3.12
 # ==========================================
 
-sudo apt-get install -y build-essential
-wget https://github.com/Kitware/CMake/releases/download/v3.15.2/cmake-3.15.2.tar.gz
-tar -zxvf cmake-3.15.2.tar.gz
-(
-	cd cmake-3.15.2
-	./bootstrap
-	make
-	sudo make install
-	cmake --version
-)
+# pre-compiled cmake
+wget https://cmake.org/files/v3.12/cmake-3.12.0-Linux-x86_64.sh
+sudo sh cmake-3.12.0-Linux-x86_64.sh --prefix=/usr/local --exclude-subdir
 
 # ==========================================
 # PREP BASH PROFILE
