@@ -61,11 +61,6 @@ EOF
 source $HOME/.profile
 
 # ==========================================
-# PERMISSIONS
-# ==========================================
-sudo chown vagrant -R /home/vagrant
-
-# ==========================================
 # AGENT
 # ==========================================
 
@@ -75,6 +70,13 @@ pip3 install -r requirements.txt
 python3 -m invoke rtloader.make
 python3 -m invoke rtloader.install
 python3 -m invoke deps
+
+# ==========================================
+# PERMISSIONS
+# ==========================================
+
+# Makesure vagrant user have access to everything under /home/vagrant
+sudo chown vagrant -R /home/vagrant
 
 # ==========================================
 # END
