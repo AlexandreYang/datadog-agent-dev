@@ -21,6 +21,9 @@ install:
 # Install vagrant-libvirt Vagrant plugin
 - sudo vagrant plugin install vagrant-libvirt
 
+# Clone Datadog Agent
+- git clone https://github.com/DataDog/datadog-agent.git data/datadog-agent
+
 script:
 - sudo vagrant up --provider=libvirt
 - sudo vagrant ssh -c "echo 'hello world!'"
