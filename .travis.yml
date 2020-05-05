@@ -28,6 +28,6 @@ script:
 - sudo vagrant up --provider=libvirt
 - sudo vagrant ssh -c "echo 'hello world!'"
 - sudo vagrant ssh -c "inv deps"
-- sudo vagrant ssh -c "inv test --targets=./pkg/collector/corechecks/net --verbose"
+# - sudo vagrant ssh -c "inv test --targets=./pkg/collector/corechecks/net --verbose"
 - sudo vagrant ssh -c "inv agent.build"
 - sudo vagrant ssh -c "./bin/agent/agent version"
