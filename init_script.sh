@@ -14,6 +14,8 @@ echo "Init Script"
 apt-get update
 apt-get install -y curl git-all
 
+apt-get install -y libsystemd-dev  # for Agent systemd
+
 # ==========================================
 # Install GO
 # ==========================================
