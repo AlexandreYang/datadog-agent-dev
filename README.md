@@ -15,7 +15,7 @@ vagrant up
 ```
 vagrant ssh
 
-inv agent.build
+inv agent.build --python-runtimes 3
 inv test --targets=./pkg/collector/check
 ```
 
