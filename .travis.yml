@@ -32,4 +32,4 @@ script:
 - sudo vagrant ssh -c "inv agent.build --python-runtimes 3"
 - sudo vagrant ssh -c "./bin/agent/agent version"
 - sudo vagrant ssh -c "touch dev/dist/datadog.yaml"
-- sudo vagrant ssh -c "./bin/agent/agent -c dev/dist/datadog.yaml check systemd"
+# - sudo vagrant ssh -c "./bin/agent/agent -c dev/dist/datadog.yaml check systemd"
