@@ -1,3 +1,4 @@
 /data/datadog-agent
 .vagrant
+.DS_Store
 *.log
